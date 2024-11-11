@@ -103,16 +103,18 @@ const Home = () => {
             openModal={openModal}
             notes={notes}
             onSelectNote={handleSelectNote}
+            show={showModel}
           />
         )}
         {selectedNoteIndex !== null && selectedNoteIndex < notes.length ? (
           <NotesView
             selectedNote={notes[selectedNoteIndex]}
             onAddMessage={handleAddMessage}
+            show={showModel}
           />
         ) : (
-          !isMobile && <NotesArea />
-        )}
+          !isMobile && <NotesArea show={showModel} />
+        )} 
       </div>
     </>
   );

@@ -24,7 +24,7 @@ const SideBar = ({ show, openModal, notes, onSelectNote }) => {
   };
 
   return (
-    <div className={show ? "blursidebar" :"sidebarwidth" }>
+    <div className={show ? "blursidebar" : "sidebarwidth"}>
       <h1 className="titledesign">Pocket Notes</h1>
       <section className="Notes-media">
         <ul>
@@ -34,9 +34,17 @@ const SideBar = ({ show, openModal, notes, onSelectNote }) => {
               onClick={() => handleNoteClick(index)}
               className={`noteslist ${selected === index ? "selected" : ""}`}
             >
-              <div className="namelogo" style={{ background: note.color }}>
+              <div
+                className="namelogo"
+                style={
+                  show
+                    ? { background: "#2F2F2FA6", color: "#2F2F2FA6"}
+                    : { background: note.color }
+                }
+              >
                 {logotexts[index]}
               </div>
+
               <li>{note.text}</li>
             </div>
           ))}

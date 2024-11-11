@@ -4,7 +4,7 @@ import Header from "./Header";
 import Input from "./Input";
 import MessageView from "./MessageView";
 
-const NotesView = ({ selectedNote, onAddMessage }) => {
+const NotesView = ({ selectedNote, onAddMessage}) => {
   return (
     <div className="NoteView-container">
       <Header selectedNote={selectedNote} />
