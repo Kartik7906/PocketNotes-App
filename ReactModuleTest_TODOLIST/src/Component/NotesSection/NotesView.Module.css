@@ -1,0 +1,15 @@
+.NoteView-container{
+    height: 100vh;
+    width: 75vw;
+    background-color: #DAE5F5;
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    .NoteView-container {
+        height: 100vh;
+        width: 100vw;
+        background-color: #DAE5F5;
+        position: relative;
+    }
+}

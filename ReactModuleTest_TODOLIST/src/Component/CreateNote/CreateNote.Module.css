@@ -1,0 +1,128 @@
+.popupcontainer {
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 25%;
+    z-index: 5;
+    right: 27%;
+    border-radius: 5px;
+  }
+  
+  .Popup-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .Popup-content p {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 480;
+    line-height: 40px;
+    letter-spacing: 0.035em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .groupinput {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .groupinput label {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 480;
+    line-height: 40px;
+    letter-spacing: 0.035em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+  }
+  
+  .groupinput input {
+    width: 320px;
+    height: 40px;
+    border-radius: 22px;
+    border: 2px;
+    background: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.035em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 20px;
+  }
+  
+  .groupcolor {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .groupcolor label {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 480;
+    line-height: 40px;
+    letter-spacing: 0.035em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .createbtn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+  }
+  
+  .createbtn button {
+    width: 136px;
+    height: 36px;
+    border-radius: 11px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32.04px;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    background: #001F8B;
+    border: none;
+  }
+  
+  /* Media Query for screens 1024px or smaller */
+  @media (max-width: 1024px) {
+    .popupcontainer {
+      position: fixed; /* Ensures it stays visible */
+      top: 30%; /* Adjust top position for better view on smaller screens */
+      right: 5%; /* Closer to the right edge to ensure visibility */
+      width: 90%; /* Makes the popup container take up most of the screen width for better accessibility */
+    }
+  
+    .Popup-content {
+      padding: 15px; /* Reduce padding for smaller screens */
+      gap: 10px; /* Reduce gap between elements */
+    }
+  
+    .groupinput {
+      flex-direction: column; /* Stack labels and inputs vertically on small screens */
+      gap: 10px;
+    }
+  
+    .groupinput input {
+      width: 90%; /* Make input fields full width to match container */
+    }
+  
+    .groupcolor {
+      flex-direction: column; /* Stack labels vertically */
+      gap: 10px;
+    }
+  
+    .createbtn {
+      justify-content: center; /* Center button on smaller screens */
+      margin-top: 15px; /* Add some space from other elements */
+    }
+  }
+  

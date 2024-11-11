@@ -1,0 +1,52 @@
+.header-container{
+    width: 100%;
+    height: 12%;
+    background-color: #001F8B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.backbtn {
+    display: none; 
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1024px) {
+    .backbtn {
+      display: block; 
+    }
+  }
+
+.notes-title-bar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+
+    .notes-title-profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 23.56px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+
+    .notes-title-text{
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.13px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;        
+    }
+}
